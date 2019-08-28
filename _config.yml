@@ -8,7 +8,6 @@ baseurl: /real-time-data-feed
 search: false
 
 after_footer_scripts:
-  - /assets/js/author.js
   - /assets/js/footer-copyright.js
 
 include:
