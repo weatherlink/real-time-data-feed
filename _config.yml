@@ -8,7 +8,7 @@ baseurl: /real-time-data-feed
 search: false
 
 after_footer_scripts:
-  - /assets/js/footer-copyright.js
+  - /assets/vendor/weatherlink/js/footer-copyright.js
 
 include:
   - _pages
