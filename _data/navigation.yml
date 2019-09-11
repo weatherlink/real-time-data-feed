@@ -7,7 +7,11 @@ navMain:
     children:
       - title: Introduction
         url: /
+  - title: Getting Started
+    children:
       - title: Accessing RDF
         url: /accessing-rdf
+  - title: Reference
+    children:
       - title: Structure of the Data
         url: /structure-of-the-data
