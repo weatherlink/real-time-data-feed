@@ -1,6 +1,6 @@
 ---
-title: Accessing RDF
-permalink: /accessing-rdf
+title: Accessing the RDF
+permalink: /accessing-the-rdf
 classes: wide
 header:
   overlay_color: "#000000"
