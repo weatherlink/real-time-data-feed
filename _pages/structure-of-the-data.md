@@ -16,6 +16,7 @@ Below is a sample JSON document from an RDF stream for a WeatherLink Live Integr
 
 ```json
 {
+	"sensor_type": 45,
 	"data_structure_type": 10,
 	"did": 7405620,
 	"lsid": 5271273,
@@ -95,8 +96,8 @@ And here is a sample JSON document for a Davis Instruments 6440 Soil Moisture Se
 
 ```json
 {
-	"data_structure_type": 9,
 	"sensor_type": 108,
+	"data_structure_type": 9,
 	"lsid": 5307497,
 	"ts": 1568318700,
 	"tz": "America/Los_Angeles",
@@ -113,5 +114,13 @@ RDF JSON data records follow a fairly consistent format regardless of the type o
 
 A data record is composed of the following components:
 
-...
+- `sensor_type` - The sensor type can be used to cross reference with the [Sensor Catalog](https://weatherlink.github.io/v2-api/sensor-catalog) from the WeatherLink v2 API to find documentation on the field names and data types for all data fields supported by each type of sensor.
+- `data_structure_type` - The data structure type is used to further specify the nature of a data record when the sensor supports generating multiple types of data records. Please see the [Data Structure Types](https://weatherlink.github.io/v2-api/data-structure-types) page from the WeatherLink v2 API for more details.
+- `lsid` - The Logical Sensor ID. This is a unique ID for the sensor.
+- `did` - The Device ID. This is the decimal representation of the hexadecimal Device ID identification number on WeatherLink connected devices. This field is only present for ISS sensors.
+- `ts` - The Unix timestamp of the data record.
+- `tz` - The IANA time zone name for the weather station's selected time zone.
+- `tzo` - The time zone offset from UTC.
+- `rain_collector` - If the sensor is an ISS or rain collector sensor there will be information about the measurement size and unit type of the rain collector. If the sensor is not an ISS or rain collector this field will not be included.
+- `data` - The data field contains all of the data fields reported by the sensor.
 
