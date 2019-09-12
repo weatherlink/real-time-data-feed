@@ -12,14 +12,14 @@ Data records in an RDF stream are formatted in JSON.
 
 ## Sample Data Record
 
-Below is a sample JSON document from an RDF stream for an EnviroMonitor Integrated Sensor Suite (ISS) current conditions data record.
+Below is a sample JSON document from an RDF stream for a WeatherLink Live Integrated Sensor Suite (ISS) current conditions data record.
 
 ```json
 {
-	"data_structure_type": 6,
-	"did": 8422640,
-	"lsid": 5307508,
-	"ts": 1568313900,
+	"data_structure_type": 10,
+	"did": 7405620,
+	"lsid": 5271273,
+	"ts": 1568318826,
 	"tz": "America/Los_Angeles",
 	"tzo": -25200,
 	"rain_collector": {
@@ -27,46 +27,91 @@ Below is a sample JSON document from an RDF stream for an EnviroMonitor Integrat
 		"unit": "inches"
 	},
 	"data": {
-		"bar": 30.091,
-		"bar_absolute": 29.659,
-		"bar_trend": 0,
-		"dew_point": 52,
-		"et_day": 0.033,
-		"forecast_desc": null,
-		"forecast_rule": null,
-		"heat_index": 85,
-		"hum_out": 30,
-		"rain_15_min_clicks": 0,
-		"rain_15_min_in": 0,
-		"rain_15_min_mm": 0,
-		"rain_60_min_clicks": 0,
-		"rain_60_min_in": 0,
-		"rain_60_min_mm": 0,
-		"rain_24_hr_clicks": 0,
-		"rain_24_hr_in": 0,
-		"rain_24_hr_mm": 0,
-		"rain_day_clicks": 0,
-		"rain_day_in": 0,
-		"rain_day_mm": 0,
-		"rain_rate_clicks": 0,
-		"rain_rate_in": 0,
-		"rain_rate_mm": 0,
+		"temp": 93.4,
+		"hum": 19,
+		"dew_point": 45,
+		"wet_bulb": 53.7,
+		"heat_index": 90.3,
+		"wind_chill": 93.4,
+		"thw_index": 90.3,
+		"thsw_index": 100.5,
+		"wind_speed_last": 1,
+		"wind_dir_last": 257,
+		"wind_speed_avg_last_1_min": 0.56,
+		"wind_dir_scalar_avg_last_1_min": 296,
+		"wind_speed_avg_last_2_min": 0.81,
+		"wind_dir_scalar_avg_last_2_min": 38,
+		"wind_speed_hi_last_2_min": 2,
+		"wind_dir_at_hi_speed_last_2_min": 37,
+		"wind_speed_avg_last_10_min": 0.62,
+		"wind_dir_scalar_avg_last_10_min": 99,
+		"wind_speed_hi_last_10_min": 3,
+		"wind_dir_at_hi_speed_last_10_min": 43,
+		"rain_rate_last_clicks": 0,
+		"rain_rate_last_in": 0,
+		"rain_rate_last_mm": 0,
+		"rain_rate_hi_clicks": 0,
+		"rain_rate_hi_in": 0,
+		"rain_rate_hi_mm": 0,
+		"rainfall_last_15_min_clicks": 0,
+		"rainfall_last_15_min_in": 0,
+		"rainfall_last_15_min_mm": 0,
+		"rain_rate_hi_last_15_min_clicks": 0,
+		"rain_rate_hi_last_15_min_in": 0,
+		"rain_rate_hi_last_15_min_mm": 0,
+		"rainfall_last_60_min_clicks": 0,
+		"rainfall_last_60_min_in": 0,
+		"rainfall_last_60_min_mm": 0,
+		"rainfall_last_24_hr_clicks": 0,
+		"rainfall_last_24_hr_in": 0,
+		"rainfall_last_24_hr_mm": 0,
 		"rain_storm_clicks": 0,
 		"rain_storm_in": 0,
 		"rain_storm_mm": 0,
-		"rain_storm_start_date": null,
-		"solar_rad": 775,
-		"temp_out": 86.7,
-		"thsw_index": 97,
-		"uv": 4,
-		"wind_chill": 87,
-		"wind_dir": 95,
-		"wind_dir_of_gust_10_min": 135,
-		"wind_gust_10_min": 2,
-		"wind_speed": 1,
-		"wind_speed_2_min": 0.2,
-		"wind_speed_10_min": 0.5
+		"rain_storm_start_at": null,
+		"solar_rad": 821,
+		"uv_index": 5.5,
+		"rx_state": 0,
+		"trans_battery_flag": 0,
+		"rainfall_daily_clicks": 0,
+		"rainfall_daily_in": 0,
+		"rainfall_daily_mm": 0,
+		"rainfall_monthly_clicks": 0,
+		"rainfall_monthly_in": 0,
+		"rainfall_monthly_mm": 0,
+		"rainfall_year_clicks": 120,
+		"rainfall_year_in": 1.2,
+		"rainfall_year_mm": 30.48,
+		"rain_storm_last_clicks": 3,
+		"rain_storm_last_in": 0.03,
+		"rain_storm_last_mm": 0.762,
+		"rain_storm_last_start_at": 1559879160,
+		"rain_storm_last_end_at": 1559970061
 	}
 }
 ```
+
+And here is a sample JSON document for a Davis Instruments 6440 Soil Moisture Sensor that is part of an EnviroMonitor installation.
+
+```json
+{
+	"data_structure_type": 9,
+	"sensor_type": 108,
+	"lsid": 5307497,
+	"ts": 1568318700,
+	"tz": "America/Los_Angeles",
+	"tzo": -25200,
+	"data": {
+		"moist_soil_last": 22.2
+	}
+}
+```
+
+## Data Record Structure
+
+RDF JSON data records follow a fairly consistent format regardless of the type of weather station or data record type.
+
+A data record is composed of the following components:
+
+...
 
