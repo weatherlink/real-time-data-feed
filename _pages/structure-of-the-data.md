@@ -12,7 +12,7 @@ Data records in an RDF stream are formatted in JSON.
 
 ## Sample Data Record
 
-Below is a sample JSON data record from an RDF stream for the Current Conditions record from an Integrated Sensor Suite (ISS) that is part of an EnviroMonitor weather station.
+Below is a sample JSON document from an RDF stream for an EnviroMonitor Integrated Sensor Suite (ISS) current conditions data record.
 
 ```json
 {
