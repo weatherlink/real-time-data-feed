@@ -9,7 +9,6 @@ if ($headers.length > 0) {
     var header = $headers.get(headerIndex);
     var $header = $(header);
 
-    
     $header.before('<a name="'+$header.attr('id')+'"></a>');
 
     var tagName = header.tagName.toLowerCase();
