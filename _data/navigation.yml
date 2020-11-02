@@ -19,7 +19,9 @@ navMain:
     children:
       - title: Structure of the Data
         url: /structure-of-the-data
+      - title: Data Permissions <i class="fas fa-star new-content-notification"></i> <b><i>New!</i></b>
+        url: /data-permissions
   - title: Resources
     children:
-      - title: Support
+      - title: Support <i class="fas fa-star new-content-notification"></i> <b><i>New!</i></b>
         url: /support
