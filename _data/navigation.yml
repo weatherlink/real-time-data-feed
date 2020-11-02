@@ -19,3 +19,7 @@ navMain:
     children:
       - title: Structure of the Data
         url: /structure-of-the-data
+  - title: Resources
+    children:
+      - title: Support
+        url: /support
