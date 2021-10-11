@@ -10,10 +10,8 @@ header:
 
 # Support Chat Room
 
-We have set up a dedicated support chat room for WeatherLink Real-time Data Feed users.
+## WeatherLink Developers Discord
 
-The chat room is monitored by the Davis Instruments/WeatherLink engineers responsible for the Real-time Data Feed. Feel free to ask your questions and report any issues you have with the Real-time Data Feed.
+We have created a WeatherLink Developers Discord to serve as a central location for WeatherLink Real-time Data Feed and API related chat and support with dedicated channels for each WeatherLink API and Data Feed. The Discord is monitored by the Davis Instruments/WeatherLink engineers responsible for the WeatherLink APIs. Feel free to ask your questions and report any issues you have.
 
-Keep in mind other people will also be in the chat room so please be careful and do not post any credentials or secrets in the chat.
-
-The chat room is available at <a href="https://gitter.im/WeatherLink/real-time-data-feed">https://gitter.im/WeatherLink/real-time-data-feed</a>
+You can join the WeatherLink Developers Discord at <a href="https://discord.gg/WCEdd2S4Ve">https://discord.gg/WCEdd2S4Ve</a>
