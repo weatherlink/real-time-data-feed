@@ -23,7 +23,7 @@ navMain:
         url: /data-permissions
   - title: Resources
     children:
-      - title: Status <i class="fas fa-star new-content-notification"></i> <b><i>New!</i></b>
+      - title: Status
         url: http://status.weatherlink.com/
       - title: Support
         url: /support
